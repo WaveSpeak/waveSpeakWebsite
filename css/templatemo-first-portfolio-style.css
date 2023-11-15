@@ -532,11 +532,14 @@ strong {
 }
 
 .hero-image {
-  position: absolute;
+  position: relative;
   z-index: 22;
   top: 0;
   width: 100%;
   min-width: 550px;
+  /*I migrated this terrible margin from the html to CSS, still a terrible way to keep this image centered in the image wrap!
+  TODO: find a better way please!*/
+  margin-left: -35%;
 }
 
 .hero svg {
