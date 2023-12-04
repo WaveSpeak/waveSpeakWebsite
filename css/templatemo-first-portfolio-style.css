@@ -899,6 +899,31 @@ strong {
 
 
 /*---------------------------------------
+  BIBLIOGRAPHY
+---------------------------------------*/
+
+.biblio-section:hover .biblio-image,
+.biblio-section:focus .biblio-image {
+  transform: translateY(0);
+}
+
+.biblio-section {
+  overflow: hidden;
+  background-color: var(--primary-color);
+}
+
+.biblio-image {
+  border-radius: var(--border-radius-medium);
+  filter: drop-shadow(5px 5px 6px #000000);
+  display: block;
+  width: 25%;
+  margin-left: 75%;
+  transform: translateY(150%);
+  transition: all ease 0.4s;
+}
+
+
+/*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
