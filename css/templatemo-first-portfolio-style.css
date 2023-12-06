@@ -537,10 +537,19 @@ strong {
   top: 0;
   width: 100%;
   min-width: 550px;
+  transform: scale(0.95);
+  filter: grayscale(1);
   /*I migrated this terrible margin from the html to CSS, still a terrible way to keep this image centered in the image wrap!
   TODO: find a better way please!*/
   margin-left: -35%;
+  transition: all ease 0.5s;
 }
+
+#hero-image-parent-id:hover .hero-image{
+  transform: scale(1);
+  filter: grayscale(0);
+}
+
 
 .hero svg {
   position: absolute;
@@ -752,7 +761,7 @@ strong {
 
 .projects-thumb:hover .projects-image,
 .projects-thumb:focus .projects-image {
-  transform: rotate(0) translateY(0);
+  transform: rotate(0deg) translateY(0);
 }
 
 .projects-thumb .popup-image {
@@ -1130,6 +1139,11 @@ strong {
     margin-bottom: 120px;
   }
 
+  #hero-image-parent-id .hero-image{
+    transform: scale(1);
+    filter: grayscale(0);
+  }
+
   .about-thumb {
     padding-right: 0;
     padding-left: 0;
@@ -1225,5 +1239,8 @@ strong {
   .hero-image {
     min-width: inherit;
   }
+  #hero-image-parent-id .hero-image{
+    transform: scale(1);
+    filter: grayscale(0);
+  }
 }
-
