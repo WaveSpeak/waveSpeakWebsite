@@ -50,6 +50,9 @@ body {
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
+*{
+  cursor: default;
+}
 
 h2,
 h3,
@@ -132,9 +135,7 @@ a:hover {
 .blog-section:hover{
   /*filter: drop-shadow(5px 5px 20px #000000);*/
   border: 2px solid var(--primary-color);
-}
-
-.bibliography{
+  transform: scale(1.02);
 }
 
 ::selection {
@@ -484,7 +485,7 @@ strong {
   background: var(--secondary-color);
   position: relative;
   overflow: hidden;
-  padding-top: 330px;
+  padding-top: 350px;
   padding-bottom: 330px;
 }
 
@@ -919,6 +920,10 @@ strong {
 .biblio-section {
   overflow: hidden;
   background-color: var(--primary-color);
+  transition: all ease 0.5s;
+}
+.biblio-section:hover {
+  transform: scale(1.02);
 }
 
 .biblio-image {
