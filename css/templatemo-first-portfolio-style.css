@@ -121,6 +121,7 @@ button {
 a {
   color: var(--p-color);
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -136,7 +137,21 @@ a:hover {
   /*filter: drop-shadow(5px 5px 20px #000000);*/
   border: 2px solid var(--primary-color);
   transform: scale(1.02);
+  cursor: pointer;
 }
+
+.blog-section:hover *{
+  cursor: pointer;
+}
+
+.more-blogs.active{
+  display: block;
+}
+
+.more-blogs.inactive{
+  display: none;
+}
+
 
 ::selection {
   background: var(--secondary-color);
@@ -814,6 +829,20 @@ strong {
 
 .contact-form {
   margin-left: 10px;
+}
+
+.contact .btn {
+  background-color: transparent;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+  border-width: 2px;
+  border-style: solid;
+}
+
+.contact .btn:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
 }
 
 
